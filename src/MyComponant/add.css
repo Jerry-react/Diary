@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.ntitle {
+    height: 4vh;
+    width: 100%;
+    border: none;
+    background: none;
+    padding-left: 2vh;
+    outline: none;
+    font-size: 28px;
+    font-family: crusive;
+}
+
+.content {
+    min-height: 38vh;
+    max-height: 38vh;
+    width: 100%;
+    border: none;
+    background: none;
+    padding: 4px;
+    padding-left: 2vh;
+    outline: none;
+    font-size: 16px;
+    font-family: lobster;
+    resize: none;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.content:empty:before {
+    content: attr(data-placeholder);
+    color: #aaa;
+}
+
+.btn {
+    padding: 10px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    outline: 2px solid black;
+    border-radius: 1rem;
+    background: green;
+    color: white;
+    margin-right: 15px;
+    margin-bottom: 1vh;
+    margin-left: 1vh;
+}
+
+.reset {
+    padding: 10px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    outline: 2px solid black;
+    border-radius: 1rem;
+    background: green;
+    color: white;
+    margin-right: 15px;
+}
+
+.delete{
+    padding: 10px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    outline: 2px solid black;
+    border-radius: 1rem;
+    background: red;
+    color: white;
+    margin-right: 15px;
+}
+
+.content::-webkit-scrollbar {
+    width: 5px;
+}
+
+.content::-webkit-scrollbar-track {
+    background: none;
+}
+
+.content::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+
+.content::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

@@ -1,0 +1,35 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+h2 {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 48px;
+  color: black; 
+  margin: 0 auto;
+  width: fit-content;
+  user-select: none;
+  font-style: normal;
+  letter-spacing: normal;
+  font-weight: normal;
+  text-shadow: none;
+  padding: 15px 30px;
+  margin-right: 30vw;
+}
+
+.top{
+    height: 19vh;
+    width: 19vh;
+    background-image: url("D:\Photo\top.jpg");
+}
+
+.dateTime{
+    margin-right: 32vw;
+}

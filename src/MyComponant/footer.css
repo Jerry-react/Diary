@@ -1,0 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.end{
+    width: 100vw;
+    height: 20vh;
+    background-image: url("D:\Photo\.jpeg");
+}

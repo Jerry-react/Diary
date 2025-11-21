@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.left{
+    width: 22vh;
+    border-right: 1px solid black;
+    resize: none;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    padding-right:3.5vh;
+}
+
+.left::-webkit-scrollbar {
+    width: 0.5px;
+}
+
+.item{
+    font-family: cursive;
+    height: 4vh;
+    width: 98%;
+    border: none;
+    background: none;
+
+
+}
+.clear{
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    outline: 1px solid black;
+    background: red;
+    color: #ffffff;
+    margin-top: 3vh;
+    margin-left: 6vh;
+    margin-right: 7vh;
+    margin-bottom: 2vh;
+}
+
+.show{
+    height: 4vh;
+    width: 4vh;
+    background: none;
+    margin-left: 11vw;
+    border: none;
+    font-weight: bold;
+}

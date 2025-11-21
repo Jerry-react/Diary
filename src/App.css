@@ -1,0 +1,29 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.cont {
+  padding: 2vh 1.5vh 1.5vh;
+}
+
+.main {
+  display: flex;
+  gap: 4vh;
+}
+
+.box {
+  transition: all 0.5s ease;
+  overflow: hidden; 
+}
+
+.hide {
+  transition: 0.5s ease;
+  transform: translateX(-23vh);
+}
+
+.rightbox{
+  padding-left: 0.5vh;
+  width: 158vh;
+  margin-top: 2vh;
+}
