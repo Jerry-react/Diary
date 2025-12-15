@@ -1,8 +1,8 @@
 import React from 'react'
 import './header.css'
-import { useState , useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
-export default function Header() {
+export default function Header({setprofile}) {
     const now = new Date();
     const [time, setTime] = useState(new Date());
 
@@ -13,15 +13,23 @@ export default function Header() {
 
         return () => clearInterval(timer);
     }, []);
+
     return (
         <>
             <div className='container'>
+                <div className='lhs'>
+                <div className='profile' onClick={()=>{setprofile(pre => !pre);}}>
+                    <div className='style'></div>
+                    <div className='menu'></div>
+                </div>
+ 
                 <div className='dateTime'>
                     <p>Date: {now.toLocaleDateString()}</p>
                     <p>Time: {now.toLocaleTimeString()}</p>
                 </div>
+                </div>
                 <div className='title'>
-                    <h2>My Diary</h2>
+                    <h2>Notes</h2>
                 </div>
                 <div className='top'></div>
             </div><hr />

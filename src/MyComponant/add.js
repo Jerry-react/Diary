@@ -101,7 +101,7 @@ export default function Add({ form, setlist, data, setdata ,setform}) {
             alert("Content can't be blank!");
             return;
         }
-
+        
         let storedlist = JSON.parse(localStorage.getItem("data") || "[]");
         let updatedlist = storedlist.map(item => item.title === data.title ? { ...item, title: newtitle, main: newmain } : item);
 
@@ -109,6 +109,7 @@ export default function Add({ form, setlist, data, setdata ,setform}) {
         localStorage.setItem("data", JSON.stringify(updatedlist));
 
         setdata("");
+        setform(true);
     }
 
     /* Clrar all pre-fill data */ 

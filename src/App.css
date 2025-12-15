@@ -3,13 +3,12 @@
   padding: 0;
 }
 
-.cont {
-  padding: 2vh 1.5vh 1.5vh;
-}
-
 .main {
   display: flex;
-  gap: 4vh;
+  gap: 3vh;
+  margin-top: 2vh;
+  flex-wrap: wrap;
+
 }
 
 .box {
@@ -19,11 +18,24 @@
 
 .hide {
   transition: 0.5s ease;
-  transform: translateX(-23vh);
+  transform: translateX(-9vh);
 }
 
 .rightbox{
-  padding-left: 0.5vh;
-  width: 158vh;
+  width: 30vh;
   margin-top: 2vh;
+}
+
+.ko{
+  display: none;
+}
+
+.full{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.third{
+  margin-top: 7.5vh;
 }
